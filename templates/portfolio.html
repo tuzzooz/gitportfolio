@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block title %}Portfólio{% endblock %}
+
+{% block content %}
+<section id="home" data-aos="fade-up" data-aos-delay="100">
+    <h1 class="titulo">Bem-vindo ao meu Portfólio!</h1>
+    <p class="textointroducao">Aqui falarei um pouco sobre meus objetivos, minhas habilidades, projetos em andamento e certificados que possuo!</p>
+</section>
+    <div class="introdução">
+        <section id="fotoinicio" data-aos="fade-up" data-aos-delay="100">
+        <img src="{{ url_for('static', filename='img/IMG-20221224-WA0015.jpg')}}" style="width: 400px; height: 400px; border-radius: 50%; object-fit: cover;" class="foto2">
+        </section>
+        <section id="about" data-aos="fade-up" data-aos-delay="100">
+            <h1>• Sobre Mim</h1>
+            <br>
+            <p class="sobremim">Meu nome é Otávio Vianna Lima, nasci em 2004 e atualmente estou cursando Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos. Desde pequeno sempre tive muito interesse por computadores e por isso decidi seguir com essa carreira, gosto muito de front-end, design e também tenho muito interesse no estudo de segurança digital, porém, estou sempre apto a estudar diversos assuntos afim de cumprir meus objetivos!</p>
+        </section>
+    </div>
+    <section id="Formação" data-aos="fade-up" data-aos-delay="200">
+        <h1>• Currículo</h1>
+        <br>
+        <h2>➠ Formação Acadêmica</h2>
+        <p>Atualmente estou cursando Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos até 2027.</p>
+        <br>
+        <h2>➠ Certificações</h2>
+        <p>☑ Fluente em Inglês pela prova do Cambridge.</p>
+        <embed src="{{ url_for('static', filename='pdf/StatementOfResult.pdf') }}" width="100%" height="600px" type="application/pdf">
+        <br>
+        <br>
+        <h2>➠ Competências Técnicas</h2>
+        <h3>☑ Linguagens: Python, HTML e CSS</h3>
+        <h3>☑ Frameworks: Bootstrap, Flask</h3>
+        <h3>☑ Ferramentas: Git, MySQL, AWS</h3>
+    </section>
+
+    <section id="projects" data-aos="fade-up" data-aos-delay="200">
+        <h1>• Meus Projetos</h1>
+        <br>
+        <h2>➠ API primeiro semestre</h2>
+        <p>➞ Descrição: Esse projeto colhe os dados fornecidos pelo site da prefeitura a respeito das proposições, assiduidade, participação em comissões de cada vereador de forma interativa e fácil de se entender.</p>
+        <p>➞ Tecnologias ULlizadas: Python, HTML/CSS, JavaScript, MYSQL e JIRA</p>
+        <p>➞ o Desafio: Fazer um site interativo que facilite a busca de informações sobre os vereadores da cidade de São José dos Campos.</p>
+        <p>➞ o Solução: Fizemos um site usando html, css, python e banco de dados para colher as informações e transformar a expêriencia de pesquisa sobre vereadores muito mais prática e dinâmica.</p>
+        <a href="https://github.com/nicolygz/the-devs-department" class="linkprojeto">➞ GitHub do projeto</a>
+        <video width="100%" height="600px" controls>
+        <source src="{{ url_for('static', filename='videos/The Devs Dept - Sprint 1 - Pedro Henrique Vaz (1080p, h264, youtube).mp4') }}" type="video/mp4">
+        </video>
+    </section>
+        <br>
+
+        <section id="trabalhos" data-aos="fade-up" data-aos-delay="100">
+            <h1>• Trabalhos Acadêmicos</h1>
+            <br>
+            <h2>➠ Trabalho de conclusão de curso (TCC - 2022) </h2>
+            <p>➞ Título: "A presença do cyberbullying contra as mulheres nos ambientes onlines"</p>
+            <p>➞ Resumo: Neste trabalho pesquisamos dados e entrevistas sobre a taxa de cyberbullying contra as mulheres em ambientes onlines.</p>
+            <p>➞ Resultados: Conseguimos dados e estátisticas mostrando o quanto as mulheres infelizmente são alvo em ambientes onlines e também pontuamos refêrencias femininas que possuem muito impacto nas redes sociais..</p>
+        </section>
+
+    <section id="contact" data-aos="fade-up" data-aos-delay="300">
+        <h1>• Contato</h1>
+        <br>
+        <p>Estou sempre aberto a novas oportunidades. Entre em contato comigo pelos meios abaixos ou preencha o formulário!</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> otavioviannalima@gmail.com</p>
+            <p><strong>Telefone:</strong> (12) 997239234</p>
+            <p><strong>Localização:</strong> São José dos Campos</p>
+        </div>
+        <br>
+        <div class="social-links">
+            
+            <h2>➠ Minhas redes sociais</h2>
+            <a href="https://www.linkedin.com/in/otávio-vianna-lima-1b26a932a/" target="_blank"><img src="static/img/145807.png" height="80" width="80" alt="LinkedIn"></a>
+            <a href="https://github.com/tuzzooz" target="_blank"><img src="static/img/25231.png" height="80" width="80" alt="GitHub"></a>
+            <a href="https://www.instagram.com/otviootario/profilecard/?igsh=Y3BkbWVycG95Znc4" target="_blank"><img src="static/img/15713420.png" height="80" width="80" alt="instagram"></a>
+        </div>
+        <br>
+        <br>
+        <a href="mailto:otavioviannalima@gmail.com" class="btn btn-primary">Envie-me um e-mail</a>
+    </section>
+{% endblock %}
